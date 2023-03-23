@@ -24,8 +24,29 @@ main {
   align-items: center;
 
   .time {
-    font-size: 60px;
-    border: 10px dotted blueviolet;
     padding: 12px 24px;
+  }
+
+  .quotes {
+    position: relative;
+    font-size: 60px;
+
+    .quotesAddBtn {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    &:hover {
+      .quotesAddBtn {
+        display: inline-block;
+      }
+    }
+  }
+
+  .newQuotes {
+    display: none;
   }
 }
